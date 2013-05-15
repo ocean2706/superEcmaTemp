@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>org.mozilla.javascript</RootNamespace>
+    <AssemblyName>rhino</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="MigrationTool">
+      <HintPath>..\MigrationTool\bin\Debug\MigrationTool.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="classfile\ByteCode.cs" />
+    <Compile Include="classfile\ClassFileWriter.cs" />
+    <Compile Include="javascript\tools\SourceReader.cs" />
+    <Compile Include="javascript\commonjs\module\provider\ParsedContentType.cs" />
+    <Compile Include="javascript\Kit.cs" />
+    <Compile Include="javascript\NativeCall.cs" />
+    <Compile Include="javascript\NativeFunction.cs" />
+    <Compile Include="javascript\Scriptable.cs" />
+    <Compile Include="javascript\IdScriptableObject.cs" />
+    <Compile Include="javascript\ScriptableObject.cs" />
+    <Compile Include="javascript\debug\Debuggable.cs" />
+    <Compile Include="javascript\ConstProperties.cs" />
+    <Compile Include="javascript\ObjectInputStream.cs" />
+    <Compile Include="javascript\Arguments.cs" />
+    <Compile Include="javascript\BaseFunction.cs" />
+    <Compile Include="javascript\BoundFunction.cs" />
+    <Compile Include="javascript\Callable.cs" />
+    <Compile Include="javascript\ClassCache.cs" />
+    <Compile Include="javascript\ClassShutter.cs" />
+    <Compile Include="javascript\CodeGenerator.cs" />
+    <Compile Include="javascript\CompilerEnvirons.cs" />
+    <Compile Include="javascript\ConsString.cs" />
+    <Compile Include="javascript\Context.cs" />
+    <Compile Include="javascript\ContextAction.cs" />
+    <Compile Include="javascript\ContextFactory.cs" />
+    <Compile Include="javascript\ContextListener.cs" />
+    <Compile Include="javascript\ContinuationPending.cs" />
+    <Compile Include="javascript\DToA.cs" />
+    <Compile Include="javascript\Decompiler.cs" />
+    <Compile Include="javascript\DefaultErrorReporter.cs" />
+    <Compile Include="javascript\DefiningClassLoader.cs" />
+    <Compile Include="javascript\Delegator.cs" />
+    <Compile Include="javascript\EcmaError.cs" />
+    <Compile Include="javascript\ErrorReporter.cs" />
+    <Compile Include="javascript\Evaluator.cs" />
+    <Compile Include="javascript\EvaluatorException.cs" />
+    <Compile Include="javascript\Function.cs" />
+    <Compile Include="javascript\FunctionObject.cs" />
+    <Compile Include="javascript\GeneratedClassLoader.cs" />
+    <Compile Include="javascript\IRFactory.cs" />
+    <Compile Include="javascript\Icode.cs" />
+    <Compile Include="javascript\IdFunctionCall.cs" />
+    <Compile Include="javascript\IdFunctionObject.cs" />
+    <Compile Include="javascript\ImporterTopLevel.cs" />
+    <Compile Include="javascript\InterfaceAdapter.cs" />
+    <Compile Include="javascript\InterpretedFunction.cs" />
+    <Compile Include="javascript\Interpreter.cs" />
+    <Compile Include="javascript\InterpreterData.cs" />
+    <Compile Include="javascript\JavaAdapter.cs" />
+    <Compile Include="javascript\JavaMembers.cs" />
+    <Compile Include="javascript\JavaScriptException.cs" />
+    <Compile Include="javascript\LazilyLoadedCtor.cs" />
+    <Compile Include="javascript\MemberBox.cs" />
+    <Compile Include="javascript\NativeArray.cs" />
+    <Compile Include="javascript\NativeBoolean.cs" />
+    <Compile Include="javascript\NativeContinuation.cs" />
+    <Compile Include="javascript\NativeDate.cs" />
+    <Compile Include="javascript\NativeError.cs" />
+    <Compile Include="javascript\NativeGenerator.cs" />
+    <Compile Include="javascript\NativeGlobal.cs" />
+    <Compile Include="javascript\NativeIterator.cs" />
+    <Compile Include="javascript\NativeJSON.cs" />
+    <Compile Include="javascript\NativeJavaArray.cs" />
+    <Compile Include="javascript\NativeJavaClass.cs" />
+    <Compile Include="javascript\NativeJavaConstructor.cs" />
+    <Compile Include="javascript\NativeJavaMethod.cs" />
+    <Compile Include="javascript\NativeJavaObject.cs" />
+    <Compile Include="javascript\NativeJavaPackage.cs" />
+    <Compile Include="javascript\NativeJavaTopPackage.cs" />
+    <Compile Include="javascript\NativeMath.cs" />
+    <Compile Include="javascript\NativeNumber.cs" />
+    <Compile Include="javascript\NativeObject.cs" />
+    <Compile Include="javascript\NativeScript.cs" />
+    <Compile Include="javascript\NativeString.cs" />
+    <Compile Include="javascript\NativeWith.cs" />
+    <Compile Include="javascript\Node.cs" />
+    <Compile Include="javascript\NodeTransformer.cs" />
+    <Compile Include="javascript\ObjArray.cs" />
+    <Compile Include="javascript\ObjToIntMap.cs" />
+    <Compile Include="javascript\Parser.cs" />
+    <Compile Include="javascript\PolicySecurityController.cs" />
+    <Compile Include="javascript\Ref.cs" />
+    <Compile Include="javascript\RefCallable.cs" />
+    <Compile Include="javascript\RegExpProxy.cs" />
+    <Compile Include="javascript\RhinoException.cs" />
+    <Compile Include="javascript\RhinoSecurityManager.cs" />
+    <Compile Include="javascript\Script.cs" />
+    <Compile Include="javascript\ScriptRuntime.cs" />
+    <Compile Include="javascript\ScriptStackElement.cs" />
+    <Compile Include="javascript\SecureCaller.cs" />
+    <Compile Include="javascript\SecurityController.cs" />
+    <Compile Include="javascript\SecurityUtilities.cs" />
+    <Compile Include="javascript\SpecialRef.cs" />
+    <Compile Include="javascript\Synchronizer.cs" />
+    <Compile Include="javascript\Token.cs" />
+    <Compile Include="javascript\TokenStream.cs" />
+    <Compile Include="javascript\TopLevel.cs" />
+    <Compile Include="javascript\UintMap.cs" />
+    <Compile Include="javascript\Undefined.cs" />
+    <Compile Include="javascript\UniqueTag.cs" />
+    <Compile Include="javascript\VMBridge.cs" />
+    <Compile Include="javascript\WrapFactory.cs" />
+    <Compile Include="javascript\WrappedException.cs" />
+    <Compile Include="javascript\Wrapper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="javascript\" />
+    <Folder Include="classfile\" />
+    <Folder Include="javascript\annotations\" />
+    <Folder Include="javascript\ast\" />
+    <Folder Include="javascript\commonjs\" />
+    <Folder Include="javascript\commonjs\module\" />
+    <Folder Include="javascript\commonjs\module\provider\" />
+    <Folder Include="javascript\debug\" />
+    <Folder Include="javascript\jdk13\" />
+    <Folder Include="javascript\jdk15\" />
+    <Folder Include="javascript\json\" />
+    <Folder Include="javascript\optimizer\" />
+    <Folder Include="javascript\regexp\" />
+    <Folder Include="javascript\resources\" />
+    <Folder Include="javascript\serialize\" />
+    <Folder Include="javascript\xml\" />
+    <Folder Include="javascript\v8dtoa\" />
+    <Folder Include="javascript\tools\" />
+    <Folder Include="javascript\tools\debugger\" />
+    <Folder Include="javascript\tools\idswitch\" />
+    <Folder Include="javascript\tools\jsc\" />
+    <Folder Include="javascript\tools\resources\" />
+    <Folder Include="javascript\tools\shell\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\java.lang.emul\java.lang.emul.csproj">
+      <Project>{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}</Project>
+      <Name>java.lang.emul</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
