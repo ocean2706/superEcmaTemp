@@ -1,8 +1,10 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="rhino/javascript/ScriptableObject.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MigrationTool/CmdLineUtils.cs">
     <Files>
-      <File FileName="rhino/javascript/ScriptableObject.cs" Line="697" Column="24" />
+      <File FileName="rhino/javascript/Arguments.cs" Line="1" Column="1" />
+      <File FileName="MigrationTool/Main.cs" Line="8" Column="4" />
+      <File FileName="MigrationTool/CmdLineUtils.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

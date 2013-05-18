@@ -1,20 +1,10 @@
 using System;
-using System.IO;
-
-namespace org.mozilla.javascript
-{
-	public class Kit
-	{
-		public static byte[] readStream (Stream ins, int capacityHint)
-		{
-
-			throw new NotImplementedException();
-		}
-
-
-		public Kit ()
-		{
-		}
-	}
+using System.Data;
+using java.lang.emul;
+namespace ro.integrator.javascript.rhino.core{
+public class Kit {
+	public Kit(){
+	//@do constructor code
 }
-
+}
+}

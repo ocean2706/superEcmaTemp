@@ -5,11 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}</ProjectGuid>
+    <ProjectGuid>{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>java.lang.emul</RootNamespace>
-    <AssemblyName>java.lang.emul</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <RootNamespace>ClassGenerator</RootNamespace>
+    <AssemblyName>ClassGenerator</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -37,18 +36,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="net\URL.cs" />
-    <Compile Include="io\FileInputStream.cs" />
-    <Compile Include="net\UrlConnection.cs" />
-    <Compile Include="ISerializable.cs" />
-    <Compile Include="util\StringTokenizer.cs" />
-    <Compile Include="Integer.cs" />
-    <Compile Include="Number.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="net\" />
-    <Folder Include="io\" />
-    <Folder Include="util\" />
-  </ItemGroup>
 </Project>

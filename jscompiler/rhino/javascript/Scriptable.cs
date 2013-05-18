@@ -1,10 +1,10 @@
 using System;
-
-namespace org.mozilla.javascript
-{
-	public interface Scriptable
-	{
-	}
-
+using System.Data;
+using java.lang.emul;
+namespace ro.integrator.javascript.rhino.core{
+public class Scriptable {
+	public Scriptable(){
+	//@do constructor code
 }
-
+}
+}

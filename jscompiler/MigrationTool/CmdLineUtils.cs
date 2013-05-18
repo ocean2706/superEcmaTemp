@@ -13,7 +13,7 @@ namespace MigrationTool
 			String val = "";
 			lines.ForEach (delegate(String l) {
 				if(l.ToLower().StartsWith(name.ToLower()+"=")){
-					val= l.ToLower().Replace(name.ToLower()+"=").Trim ('"').Trim ("'");
+					val= l.ToLower().Replace(name.ToLower()+"=").Trim ('"').Trim ("'").Trim ();
 				}else if(l.ToLower()==name.ToLower()){
 					val="True";
 				}

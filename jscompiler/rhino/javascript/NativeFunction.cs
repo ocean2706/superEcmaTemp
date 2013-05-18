@@ -1,10 +1,15 @@
 using System;
+using System.Data;
+using java.lang.emul;
+namespace ro.integrator.javascript.rhino.core{
+public class NativeFunction {
+		public int getLanguageVersion ()
+		{
+			throw new NotImplementedException ();
+		}
 
-namespace org.mozilla.javascript
-{
-	public class NativeFunction
-	{
-	}
-
+	public NativeFunction(){
+	//@do constructor code
 }
-
+}
+}

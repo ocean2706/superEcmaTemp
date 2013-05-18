@@ -11,24 +11,26 @@ namespace ReplaceInJavaFile
 			{" get("," Get("},
 			{" set("," Set("},
 			{" put("," Put("},
-			{
+			{"@Override","//@Override"},
+			{"synchronized",@"//synchronized"}
+
 
 		};
 		public static void Main (string[] args)
 		{
 			//Console.WriteLine ("Hello World!");
 			String outDir = Environment.CurrentDirectory + "/../out";
-			DirectoryInfo di = new DirectoryInfo (Environment.CurrentDirectory);
-			List<FileInfo> fi = new List<FileInfo> (di.GetFiles ("*.java", SearchOption.AllDirectories));
+			//DirectoryInfo di = new DirectoryInfo (Environment.CurrentDirectory);
+			List<String> fi =new List<string>( Directory.EnumerateFiles(Environment.CurrentDirectory, "*.java",SearchOption.AllDirectories));
 			Directory.CreateDirectory (outDir);
-			fi.ForEach (delegate(FileInfo obj) {
+			fi.ForEach (delegate(String path) {
 
-				String content = File.ReadAllText (obj.FullName);
+				String content = File.ReadAllText (path);
 		
 				foreach (String key in ToReplace.Keys) {
-					content = content.Replace (key, ToReplace [key]);
+					content = content.Replace (key, ToReplace[key]);
 				}
-				String outfile = outDir + "/" + Path.GetFileName (obj.FullName);
+				String outfile = outDir + "/" + Path.GetFileName (path);
 				File.WriteAllText (outfile, content);
 				Console.WriteLine ("Generated " + outfile);
 			});
