@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jsc", "jsc\jsc.csproj", "{1BD695FD-5755-4BC0-84A0-14811E4B7CCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rhino", "rhino\rhino.csproj", "{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "java.lang.emul", "java.lang.emul\java.lang.emul.csproj", "{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{3BCA9166-3860-4B6F-87B8-E53825BD4364}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationTool", "MigrationTool\MigrationTool.csproj", "{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}"
 EndProject
@@ -29,22 +27,25 @@ Global
 		{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}.Debug|x86.Build.0 = Debug|x86
 		{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}.Release|x86.ActiveCfg = Release|x86
 		{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}.Release|x86.Build.0 = Release|x86
-		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Debug|x86.ActiveCfg = Debug|x86
-		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Debug|x86.Build.0 = Debug|x86
-		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Release|x86.ActiveCfg = Release|x86
-		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Release|x86.Build.0 = Release|x86
 		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Debug|x86.ActiveCfg = Debug|x86
 		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Debug|x86.Build.0 = Debug|x86
 		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Release|x86.ActiveCfg = Release|x86
 		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Release|x86.Build.0 = Release|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.ActiveCfg = Debug|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.Build.0 = Debug|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.ActiveCfg = Release|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.Build.0 = Release|x86
 		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Debug|x86.ActiveCfg = Debug|x86
 		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Debug|x86.Build.0 = Debug|x86
 		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Release|x86.ActiveCfg = Release|x86
 		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Release|x86.Build.0 = Release|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.ActiveCfg = Debug|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.Build.0 = Debug|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.ActiveCfg = Release|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.Build.0 = Release|x86
+		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Debug|x86.ActiveCfg = Debug|x86
+		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Debug|x86.Build.0 = Debug|x86
+		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Release|x86.ActiveCfg = Release|x86
+		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F} = {3BCA9166-3860-4B6F-87B8-E53825BD4364}
