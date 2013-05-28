@@ -68,27 +68,5 @@ namespace ReplaceInJavaFile
         public bool IsPrefixSuffix = false;
         public bool IsRegexp = false;
 	}
-	public class ReplaceItem
-	{
-		
-		public ReplaceItem ()
-		{
-			
-			
-		}
-		
-		public List<ReplaceListItem> ReplaceList=new List<ReplaceListItem>();
-
-
-        public String DoRegexp(String incomming)
-        {
-            String outc = incomming;
-            ReplaceList.ForEach(delegate(ReplaceListItem r)
-            {
-                r.ExecuteCallBack(incomming, r);
-            });
-            return outc;
-        }
-	}
 }
 
