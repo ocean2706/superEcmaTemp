@@ -24,22 +24,23 @@ namespace ReplaceInJavaFile
 			ListOfReplaceItem listOfSearches = new ListOfReplaceItem ();
 			String outputDir = levelDir.Replace (sourceDir, sourceDir.Replace ("/src/", "/out/"));
 
-			List<String> fi = new List<string> (Directory.EnumerateFiles(levelDir, "*.java",SearchOption.TopDirectoryOnly));
+			List<String> fi = new List<string> (Directory.GetFiles(levelDir, "*.java",SearchOption.TopDirectoryOnly));
 			fi.ForEach (delegate(String path){
 				String incomming=File.ReadAllText(path);
 				String gen=listOfSearches.DoRegexp(incomming);
 				String outF=path.Replace (levelDir,outputDir);
-				outF=Path.GetFileNameWithoutExtension(outF)+".cs";
+				outF=Path.GetDirectoryName(outF)+"/"+Path.GetFileNameWithoutExtension(outF)+".cs";
 				Directory.CreateDirectory(Path.GetDirectoryName(outF));
-				File.WriteAllText(outf,gen);
+				File.WriteAllText(outF,gen);
 			});
 			// recursive execute oprerations
-			fi = new List<String> (Directory.EnumerateDirectories(levelDir,"*",SearchOption.TopDirectoryOnly));
+			fi = new List<String> (Directory.GetDirectories(levelDir,"*",SearchOption.TopDirectoryOnly));
 			fi.ForEach(delegate (String ddr){
 				if(Path.GetFileName(ddr)!="." && Path.GetFileName(ddr)!=".."){
 				SearchAndDestroyRecursive(ddr);
 				}
 			});
+			return "";
 		}
 		// recurse in directoryes
 

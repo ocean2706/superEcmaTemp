@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jsc", "jsc\jsc.csproj", "{1BD695FD-5755-4BC0-84A0-14811E4B7CCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rhino", "rhino\rhino.csproj", "{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}"
@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceInJavaFile", "tools\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassGenerator", "tools\ClassGenerator\ClassGenerator.csproj", "{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "..\..\..\..\..\..\..\..\bkp\gitstore\online\superEcmaTemp\jscompiler\Tester\Tester.csproj", "{2B359FEC-9740-45C4-97A5-2BFB2971A7FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -23,37 +25,33 @@ Global
 		{1BD695FD-5755-4BC0-84A0-14811E4B7CCB}.Debug|x86.Build.0 = Debug|x86
 		{1BD695FD-5755-4BC0-84A0-14811E4B7CCB}.Release|x86.ActiveCfg = Release|x86
 		{1BD695FD-5755-4BC0-84A0-14811E4B7CCB}.Release|x86.Build.0 = Release|x86
+		{2B359FEC-9740-45C4-97A5-2BFB2971A7FD}.Debug|x86.ActiveCfg = Debug|x86
+		{2B359FEC-9740-45C4-97A5-2BFB2971A7FD}.Debug|x86.Build.0 = Debug|x86
+		{2B359FEC-9740-45C4-97A5-2BFB2971A7FD}.Release|x86.ActiveCfg = Release|x86
+		{2B359FEC-9740-45C4-97A5-2BFB2971A7FD}.Release|x86.Build.0 = Release|x86
 		{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}.Debug|x86.ActiveCfg = Debug|x86
 		{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}.Debug|x86.Build.0 = Debug|x86
 		{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}.Release|x86.ActiveCfg = Release|x86
 		{45E943CB-54FB-4DBA-A0DC-205468BEBEB0}.Release|x86.Build.0 = Release|x86
-		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Debug|x86.ActiveCfg = Debug|x86
-		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Debug|x86.Build.0 = Debug|x86
-		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Release|x86.ActiveCfg = Release|x86
-		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Release|x86.Build.0 = Release|x86
-		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Debug|x86.ActiveCfg = Debug|x86
-		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Debug|x86.Build.0 = Debug|x86
-		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Release|x86.ActiveCfg = Release|x86
-		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Release|x86.Build.0 = Release|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.ActiveCfg = Debug|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.Build.0 = Debug|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.ActiveCfg = Release|x86
-		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.Build.0 = Release|x86
 		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Debug|x86.ActiveCfg = Debug|x86
 		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Debug|x86.Build.0 = Debug|x86
 		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Release|x86.ActiveCfg = Release|x86
 		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F}.Release|x86.Build.0 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F} = {3BCA9166-3860-4B6F-87B8-E53825BD4364}
-		{E7038347-3275-4FB8-AD20-97159072DC24} = {3BCA9166-3860-4B6F-87B8-E53825BD4364}
-		{C4DF959A-4933-42D7-95D9-4B4DF1F8C51F} = {3BCA9166-3860-4B6F-87B8-E53825BD4364}
+		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Debug|x86.ActiveCfg = Debug|x86
+		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Debug|x86.Build.0 = Debug|x86
+		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Release|x86.ActiveCfg = Release|x86
+		{E28BCBB9-5DF2-40B9-A0EA-0DD6F0096FD6}.Release|x86.Build.0 = Release|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.ActiveCfg = Debug|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Debug|x86.Build.0 = Debug|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.ActiveCfg = Release|x86
+		{E7038347-3275-4FB8-AD20-97159072DC24}.Release|x86.Build.0 = Release|x86
+		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Debug|x86.ActiveCfg = Debug|x86
+		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Debug|x86.Build.0 = Debug|x86
+		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Release|x86.ActiveCfg = Release|x86
+		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = jsc\jsc.csproj
+		StartupItem = tools\ReplaceInJavaFile\ReplaceInJavaFile.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None
@@ -214,5 +212,8 @@ Global
 		$29.IncludeStaticEntities = True
 		$0.VersionControlPolicy = $31
 		$31.inheritsSet = Mono
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
