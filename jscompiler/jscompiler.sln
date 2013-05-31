@@ -51,7 +51,7 @@ Global
 		{FD6B21E8-AC05-4B73-9F6B-7B41BCF2FB3F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = tools\ReplaceInJavaFile\ReplaceInJavaFile.csproj
+		StartupItem = jsc\jsc.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None
